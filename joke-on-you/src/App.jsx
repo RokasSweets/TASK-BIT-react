@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NewJokes from "./Components/NewJokes";
-import '../src/App.css'
+import './App.css'
 
 function App() {
     const [jokes, setJokes] = useState([]);
