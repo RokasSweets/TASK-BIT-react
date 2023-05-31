@@ -5,7 +5,7 @@ function NewJokes() {
       
     return (
         <div className="button">
-        <button onClick={refreshPage}>GIMMIE ANOTHER 10!</button>
+        <button onClick={refreshPage}>sudo GIMMIE ANOTHER 10!</button>
         </div>
     )
 }

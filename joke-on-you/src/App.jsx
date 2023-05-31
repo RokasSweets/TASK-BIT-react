@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NewJokes from "./Components/NewJokes";
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 function App() {
     const [jokes, setJokes] = useState([]);
@@ -17,12 +18,15 @@ function App() {
     }, []);
 
     return (
-        <div className="App">
-            <h1>Programming Jokes</h1>
+<>
+        <div className="app-title">
+        <h1>Programming Jokes</h1>
+        </div>
+
             <div className="terminal">
               <p>Jokes.exe is running</p>
             </div>
-            <div className="App-header">
+            <div className="jokes col-12">
             <ul>
                 {jokes.map((joke) => (
                     <li key={joke.id}>
@@ -34,7 +38,7 @@ function App() {
             </ul>
             </div>
             <NewJokes/>
-        </div>
+        </>
     );
 }
 

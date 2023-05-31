@@ -1,8 +1,7 @@
 
-.App-header {
+.jokes {
   border: 4px solid gray;
   background-color: BLACK;
-  MAX-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -10,7 +9,7 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
-.App-header > ul {
+.jokes > ul {
   line-height: 2.2em;
   color: green;
   list-style: decimal;
@@ -22,11 +21,12 @@
 }
 
 
-.App > h1 {
+.app-title > h1 {
   font-family: 'Courier New', Courier, monospace;
-  background-color: white;
+  background-color: black;
+  color: green;
   text-align: center;
-  padding: 0;
+  margin-bottom: 0;
 }
 
 .button {
@@ -43,13 +43,24 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.button > button:hover {
+  cursor: pointer;
+  
+}
+
 .terminal {
   font-family: 'Courier New', Courier, monospace;
   border: 4px solid grey;
-  background-color: lightgrey;
+  background-color: #c3c3c3;
 }
 
 .terminal > p {
   margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: black;
 }
 
